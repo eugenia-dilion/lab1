@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>Опитувальник</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Опитувальник</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="opytuvalnyk.html">Опитувальник</a></li>
+                <li><a href="other.html">Інше</a></li>
+                <li><a href="nagorody.html">Досягнення</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form>
+            <label for="username">Логін:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Ваше повідомлення:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <label for="frequency">Як часто ви граєте у волейбол?</label>
+            <select id="frequency" name="frequency">
+                <option value="rarely">Рідко</option>
+                <option value="occasionally">Інколи</option>
+                <option value="often" selected>Часто</option>
+            </select>
+            
+            <fieldset>
+                <legend>Який рівень вашого інтересу до волейболу?</legend>
+                <label><input type="radio" name="interest" value="high"> Високий</label>
+                <label><input type="radio" name="interest" value="medium"> Середній</label>
+                <label><input type="radio" name="interest" value="low"> Низький</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Ваші улюблені позиції на полі:</legend>
+                <label><input type="checkbox" name="position" value="spiker"> Нападник</label>
+                <label><input type="checkbox" name="position" value="setter"> Плеймейкер</label>
+                <label><input type="checkbox" name="position" value="libero"> Ліберо</label>
+            </fieldset>
+            
+            <button type="submit">Відправити</button>
+            <button type="reset">Очистити</button>
+        </form>
+    </main>
+</body>
+</html>
